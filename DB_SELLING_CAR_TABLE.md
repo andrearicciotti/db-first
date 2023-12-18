@@ -6,7 +6,7 @@
 
 |  ID |  MARCA |  MODELLO |  CILINDRATA_CC | ALLESTIMENTO  |  ALIMENTAZIONE |  CAMBIO |  KM_PERCORSI |  ANNO_PRODUZIONE  |  PRIMA_IMMATRICOLAZIONE | NUM_PROPRIETARI  |  DESCRIZIONE_STATO |  FOTO_URL |  DATA_ULTIMO_TAGLIANDO |  STORICO_INCIDENTI | PREZZO  |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|  1 | fiat  |  punto |  1200 |  null |  benzina |  manuale |  125'433 | 2003  |  2004-02-20 | 3  | null  | null  | 2022-11-24  | null  | 2450,00  |
 |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
 |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
 
@@ -26,4 +26,4 @@
 - **FOTO_URL** NULL VARCHAR(255),
 - **DATA_ULTIMO_TAGLIANO** NOTNULL DATE,
 - **STORICO_INCIDENTI** NULL TEXT,
-- **PREZZO** NOTNULL DECIMAL 
+- **PREZZO** NOTNULL DECIMAL(9,2) 
