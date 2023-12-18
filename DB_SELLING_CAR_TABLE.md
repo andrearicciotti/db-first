@@ -1,0 +1,29 @@
+# DATABASE CONCESSIONARIO AUTOVETTURE
+
+---
+
+## TABELLA AUTO_IN_VENDITA
+
+|  ID |  MARCA |  MODELLO |  CILINDRATA_CC | ALLESTIMENTO  |  ALIMENTAZIONE |  CAMBIO |  KM_PERCORSI |  ANNO_PRODUZIONE  |  PRIMA_IMMATRICOLAZIONE | NUM_PROPRIETARI  |  DESCRIZIONE_STATO |  FOTO_URL |  DATA_ULTIMO_TAGLIANDO |  STORICO_INCIDENTI | PREZZO  |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+
+
+- **ID** PRIMARY KEY AUTOINCREMENT,
+- **MARCA** NOTNULL UNIQUE VARCHAR(15),
+- **MODELLO** NOTNULL VARCHAR(255),
+- **CILINDRATA_CC** NOTNULL SMALLINT,
+- **ALLESTIMENTO** NULL VARCHAR(255),
+- **ALIMENTAZIONE** NOTNULL ENUM('gasolio','benzina','gpl','ibrida','elettrica','metano'),
+- **CAMBIO** NOTNULL ENUM('manuale','automatico'),
+- **KM_PERCORSI** NOTNULL MEDIUMINT,
+- **ANNO_PRODUZIONE** NOTNULL YEAR,
+- **PRIMA_IMMATRICOLAZIONE** NOTNULL DATE,
+- **NUM_PROPRIETARI** NOTNULL TINYINT,
+- **DESCRIZIONE_STATO** NULL TEXT,
+- **FOTO_URL** NULL VARCHAR(255),
+- **DATA_ULTIMO_TAGLIANO** NOTNULL DATE,
+- **STORICO_INCIDENTI** NULL TEXT,
+- **PREZZO** NOTNULL DECIMAL 
